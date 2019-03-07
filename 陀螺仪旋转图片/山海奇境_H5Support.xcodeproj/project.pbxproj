@@ -1,0 +1,806 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		180BC5BC222CB23E00D26BBB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 180BC5BB222CB23E00D26BBB /* AppDelegate.m */; };
+		180BC5BF222CB23E00D26BBB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180BC5BE222CB23E00D26BBB /* ViewController.m */; };
+		180BC5C2222CB23E00D26BBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180BC5C0222CB23E00D26BBB /* Main.storyboard */; };
+		180BC5C4222CB23F00D26BBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180BC5C3222CB23F00D26BBB /* Assets.xcassets */; };
+		180BC5C7222CB23F00D26BBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180BC5C5222CB23F00D26BBB /* LaunchScreen.storyboard */; };
+		180BC5CA222CB23F00D26BBB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 180BC5C9222CB23F00D26BBB /* main.m */; };
+		180BC5D4222CB23F00D26BBB /* H5SupportTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 180BC5D3222CB23F00D26BBB /* H5SupportTests.m */; };
+		180BC5DF222CB23F00D26BBB /* H5SupportUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 180BC5DE222CB23F00D26BBB /* H5SupportUITests.m */; };
+		180BC5EE222CBD1D00D26BBB /* DeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 180BC5ED222CBD1D00D26BBB /* DeviceManager.m */; };
+		180BC5F2222CCDA400D26BBB /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 180BC5F1222CCDA300D26BBB /* MBProgressHUD.m */; };
+		180BC5F7222CD57700D26BBB /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180BC5F5222CD57700D26BBB /* QRCodeViewController.m */; };
+		180BC5F8222CD57700D26BBB /* QRCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 180BC5F6222CD57700D26BBB /* QRCodeViewController.xib */; };
+		180BC5FC222D0D8F00D26BBB /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 180BC5FA222D0D8F00D26BBB /* UIView+Extension.m */; };
+		180BC600222D13D100D26BBB /* CoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 180BC5FF222D13D100D26BBB /* CoverView.m */; };
+		180BC616222D1C9400D26BBB /* 7.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 180BC602222D1C9400D26BBB /* 7.mp3 */; };
+		180BC617222D1C9400D26BBB /* 6.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 180BC603222D1C9400D26BBB /* 6.mp3 */; };
+		180BC618222D1C9400D26BBB /* 4.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 180BC604222D1C9400D26BBB /* 4.mp3 */; };
+		180BC619222D1C9400D26BBB /* 5.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 180BC605222D1C9400D26BBB /* 5.mp3 */; };
+		180BC61A222D1C9400D26BBB /* 1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 180BC606222D1C9400D26BBB /* 1.mp3 */; };
+		180BC61B222D1C9400D26BBB /* 2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 180BC607222D1C9400D26BBB /* 2.mp3 */; };
+		180BC61C222D1C9400D26BBB /* 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 180BC608222D1C9400D26BBB /* 3.mp3 */; };
+		180BC61D222D1C9400D26BBB /* 20.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 180BC609222D1C9400D26BBB /* 20.mp3 */; };
+		180BC61E222D1C9400D26BBB /* 18.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 180BC60A222D1C9400D26BBB /* 18.mp3 */; };
+		180BC61F222D1C9400D26BBB /* 19.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 180BC60B222D1C9400D26BBB /* 19.mp3 */; };
+		180BC620222D1C9400D26BBB /* 17.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 180BC60C222D1C9400D26BBB /* 17.mp3 */; };
+		180BC621222D1C9400D26BBB /* 16.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 180BC60D222D1C9400D26BBB /* 16.mp3 */; };
+		180BC622222D1C9400D26BBB /* 14.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 180BC60E222D1C9400D26BBB /* 14.mp3 */; };
+		180BC623222D1C9400D26BBB /* 15.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 180BC60F222D1C9400D26BBB /* 15.mp3 */; };
+		180BC624222D1C9400D26BBB /* 11.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 180BC610222D1C9400D26BBB /* 11.mp3 */; };
+		180BC625222D1C9400D26BBB /* 10.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 180BC611222D1C9400D26BBB /* 10.mp3 */; };
+		180BC626222D1C9400D26BBB /* 12.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 180BC612222D1C9400D26BBB /* 12.mp3 */; };
+		180BC627222D1C9400D26BBB /* 13.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 180BC613222D1C9400D26BBB /* 13.mp3 */; };
+		180BC628222D1C9400D26BBB /* 8.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 180BC614222D1C9400D26BBB /* 8.mp3 */; };
+		180BC629222D1C9400D26BBB /* 9.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 180BC615222D1C9400D26BBB /* 9.mp3 */; };
+		D39B2D4B3E5A21DFAB75802C /* Pods_H5Support.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6A53B0C11A16F494FBDD7EF /* Pods_H5Support.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		180BC5D0222CB23F00D26BBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 180BC5AF222CB23D00D26BBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 180BC5B6222CB23E00D26BBB;
+			remoteInfo = H5Support;
+		};
+		180BC5DB222CB23F00D26BBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 180BC5AF222CB23D00D26BBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 180BC5B6222CB23E00D26BBB;
+			remoteInfo = H5Support;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08F122FD292A5F19F4F7E0CA /* Pods-H5Support.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H5Support.debug.xcconfig"; path = "Pods/Target Support Files/Pods-H5Support/Pods-H5Support.debug.xcconfig"; sourceTree = "<group>"; };
+		180BC5B7222CB23E00D26BBB /* H5Support.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = H5Support.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		180BC5BA222CB23E00D26BBB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		180BC5BB222CB23E00D26BBB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		180BC5BD222CB23E00D26BBB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		180BC5BE222CB23E00D26BBB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		180BC5C1222CB23E00D26BBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		180BC5C3222CB23F00D26BBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		180BC5C6222CB23F00D26BBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		180BC5C8222CB23F00D26BBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		180BC5C9222CB23F00D26BBB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		180BC5CF222CB23F00D26BBB /* H5SupportTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = H5SupportTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		180BC5D3222CB23F00D26BBB /* H5SupportTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = H5SupportTests.m; sourceTree = "<group>"; };
+		180BC5D5222CB23F00D26BBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		180BC5DA222CB23F00D26BBB /* H5SupportUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = H5SupportUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		180BC5DE222CB23F00D26BBB /* H5SupportUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = H5SupportUITests.m; sourceTree = "<group>"; };
+		180BC5E0222CB23F00D26BBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		180BC5EC222CBD1D00D26BBB /* DeviceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceManager.h; sourceTree = "<group>"; };
+		180BC5ED222CBD1D00D26BBB /* DeviceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceManager.m; sourceTree = "<group>"; };
+		180BC5F0222CCDA300D26BBB /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		180BC5F1222CCDA300D26BBB /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		180BC5F3222CD3DC00D26BBB /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		180BC5F4222CD57700D26BBB /* QRCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRCodeViewController.h; sourceTree = "<group>"; };
+		180BC5F5222CD57700D26BBB /* QRCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeViewController.m; sourceTree = "<group>"; };
+		180BC5F6222CD57700D26BBB /* QRCodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QRCodeViewController.xib; sourceTree = "<group>"; };
+		180BC5F9222D0C1B00D26BBB /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		180BC5FA222D0D8F00D26BBB /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		180BC5FB222D0D8F00D26BBB /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		180BC5FE222D13D100D26BBB /* CoverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoverView.h; sourceTree = "<group>"; };
+		180BC5FF222D13D100D26BBB /* CoverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoverView.m; sourceTree = "<group>"; };
+		180BC602222D1C9400D26BBB /* 7.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 7.mp3; sourceTree = "<group>"; };
+		180BC603222D1C9400D26BBB /* 6.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 6.mp3; sourceTree = "<group>"; };
+		180BC604222D1C9400D26BBB /* 4.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 4.mp3; sourceTree = "<group>"; };
+		180BC605222D1C9400D26BBB /* 5.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 5.mp3; sourceTree = "<group>"; };
+		180BC606222D1C9400D26BBB /* 1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1.mp3; sourceTree = "<group>"; };
+		180BC607222D1C9400D26BBB /* 2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 2.mp3; sourceTree = "<group>"; };
+		180BC608222D1C9400D26BBB /* 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 3.mp3; sourceTree = "<group>"; };
+		180BC609222D1C9400D26BBB /* 20.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 20.mp3; sourceTree = "<group>"; };
+		180BC60A222D1C9400D26BBB /* 18.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 18.mp3; sourceTree = "<group>"; };
+		180BC60B222D1C9400D26BBB /* 19.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 19.mp3; sourceTree = "<group>"; };
+		180BC60C222D1C9400D26BBB /* 17.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 17.mp3; sourceTree = "<group>"; };
+		180BC60D222D1C9400D26BBB /* 16.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 16.mp3; sourceTree = "<group>"; };
+		180BC60E222D1C9400D26BBB /* 14.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 14.mp3; sourceTree = "<group>"; };
+		180BC60F222D1C9400D26BBB /* 15.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 15.mp3; sourceTree = "<group>"; };
+		180BC610222D1C9400D26BBB /* 11.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 11.mp3; sourceTree = "<group>"; };
+		180BC611222D1C9400D26BBB /* 10.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 10.mp3; sourceTree = "<group>"; };
+		180BC612222D1C9400D26BBB /* 12.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 12.mp3; sourceTree = "<group>"; };
+		180BC613222D1C9400D26BBB /* 13.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 13.mp3; sourceTree = "<group>"; };
+		180BC614222D1C9400D26BBB /* 8.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 8.mp3; sourceTree = "<group>"; };
+		180BC615222D1C9400D26BBB /* 9.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 9.mp3; sourceTree = "<group>"; };
+		BAA7A41A1126582A05FB52FA /* Pods-H5Support.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H5Support.release.xcconfig"; path = "Pods/Target Support Files/Pods-H5Support/Pods-H5Support.release.xcconfig"; sourceTree = "<group>"; };
+		E6A53B0C11A16F494FBDD7EF /* Pods_H5Support.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_H5Support.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		180BC5B4222CB23E00D26BBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D39B2D4B3E5A21DFAB75802C /* Pods_H5Support.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180BC5CC222CB23F00D26BBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180BC5D7222CB23F00D26BBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		180BC5AE222CB23D00D26BBB = {
+			isa = PBXGroup;
+			children = (
+				180BC5B9222CB23E00D26BBB /* H5Support */,
+				180BC5D2222CB23F00D26BBB /* H5SupportTests */,
+				180BC5DD222CB23F00D26BBB /* H5SupportUITests */,
+				180BC5B8222CB23E00D26BBB /* Products */,
+				B450B0D17F7D2677701FAD12 /* Pods */,
+				EC031D4F680F92FF20B61C51 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		180BC5B8222CB23E00D26BBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				180BC5B7222CB23E00D26BBB /* H5Support.app */,
+				180BC5CF222CB23F00D26BBB /* H5SupportTests.xctest */,
+				180BC5DA222CB23F00D26BBB /* H5SupportUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		180BC5B9222CB23E00D26BBB /* H5Support */ = {
+			isa = PBXGroup;
+			children = (
+				180BC5BA222CB23E00D26BBB /* AppDelegate.h */,
+				180BC5BB222CB23E00D26BBB /* AppDelegate.m */,
+				180BC5BD222CB23E00D26BBB /* ViewController.h */,
+				180BC5BE222CB23E00D26BBB /* ViewController.m */,
+				180BC5EC222CBD1D00D26BBB /* DeviceManager.h */,
+				180BC5ED222CBD1D00D26BBB /* DeviceManager.m */,
+				180BC5F4222CD57700D26BBB /* QRCodeViewController.h */,
+				180BC5F5222CD57700D26BBB /* QRCodeViewController.m */,
+				180BC5F6222CD57700D26BBB /* QRCodeViewController.xib */,
+				180BC5FD222D13A500D26BBB /* View */,
+				180BC5EF222CCD8D00D26BBB /* Common */,
+				180BC5C0222CB23E00D26BBB /* Main.storyboard */,
+				180BC601222D1C9400D26BBB /* voice */,
+				180BC5C3222CB23F00D26BBB /* Assets.xcassets */,
+				180BC5C5222CB23F00D26BBB /* LaunchScreen.storyboard */,
+				180BC5C8222CB23F00D26BBB /* Info.plist */,
+				180BC5C9222CB23F00D26BBB /* main.m */,
+			);
+			path = H5Support;
+			sourceTree = "<group>";
+		};
+		180BC5D2222CB23F00D26BBB /* H5SupportTests */ = {
+			isa = PBXGroup;
+			children = (
+				180BC5D3222CB23F00D26BBB /* H5SupportTests.m */,
+				180BC5D5222CB23F00D26BBB /* Info.plist */,
+			);
+			path = H5SupportTests;
+			sourceTree = "<group>";
+		};
+		180BC5DD222CB23F00D26BBB /* H5SupportUITests */ = {
+			isa = PBXGroup;
+			children = (
+				180BC5DE222CB23F00D26BBB /* H5SupportUITests.m */,
+				180BC5E0222CB23F00D26BBB /* Info.plist */,
+			);
+			path = H5SupportUITests;
+			sourceTree = "<group>";
+		};
+		180BC5EF222CCD8D00D26BBB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				180BC5F9222D0C1B00D26BBB /* PrefixHeader.pch */,
+				180BC5F3222CD3DC00D26BBB /* Header.h */,
+				180BC5FB222D0D8F00D26BBB /* UIView+Extension.h */,
+				180BC5FA222D0D8F00D26BBB /* UIView+Extension.m */,
+				180BC5F0222CCDA300D26BBB /* MBProgressHUD.h */,
+				180BC5F1222CCDA300D26BBB /* MBProgressHUD.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		180BC5FD222D13A500D26BBB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				180BC5FE222D13D100D26BBB /* CoverView.h */,
+				180BC5FF222D13D100D26BBB /* CoverView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		180BC601222D1C9400D26BBB /* voice */ = {
+			isa = PBXGroup;
+			children = (
+				180BC606222D1C9400D26BBB /* 1.mp3 */,
+				180BC607222D1C9400D26BBB /* 2.mp3 */,
+				180BC608222D1C9400D26BBB /* 3.mp3 */,
+				180BC604222D1C9400D26BBB /* 4.mp3 */,
+				180BC605222D1C9400D26BBB /* 5.mp3 */,
+				180BC603222D1C9400D26BBB /* 6.mp3 */,
+				180BC602222D1C9400D26BBB /* 7.mp3 */,
+				180BC614222D1C9400D26BBB /* 8.mp3 */,
+				180BC615222D1C9400D26BBB /* 9.mp3 */,
+				180BC611222D1C9400D26BBB /* 10.mp3 */,
+				180BC610222D1C9400D26BBB /* 11.mp3 */,
+				180BC612222D1C9400D26BBB /* 12.mp3 */,
+				180BC613222D1C9400D26BBB /* 13.mp3 */,
+				180BC60E222D1C9400D26BBB /* 14.mp3 */,
+				180BC60F222D1C9400D26BBB /* 15.mp3 */,
+				180BC60D222D1C9400D26BBB /* 16.mp3 */,
+				180BC60C222D1C9400D26BBB /* 17.mp3 */,
+				180BC60A222D1C9400D26BBB /* 18.mp3 */,
+				180BC60B222D1C9400D26BBB /* 19.mp3 */,
+				180BC609222D1C9400D26BBB /* 20.mp3 */,
+			);
+			path = voice;
+			sourceTree = "<group>";
+		};
+		B450B0D17F7D2677701FAD12 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08F122FD292A5F19F4F7E0CA /* Pods-H5Support.debug.xcconfig */,
+				BAA7A41A1126582A05FB52FA /* Pods-H5Support.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EC031D4F680F92FF20B61C51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6A53B0C11A16F494FBDD7EF /* Pods_H5Support.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		180BC5B6222CB23E00D26BBB /* H5Support */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 180BC5E3222CB23F00D26BBB /* Build configuration list for PBXNativeTarget "H5Support" */;
+			buildPhases = (
+				C910DAF94DF0501FF8CC1A62 /* [CP] Check Pods Manifest.lock */,
+				180BC5B3222CB23E00D26BBB /* Sources */,
+				180BC5B4222CB23E00D26BBB /* Frameworks */,
+				180BC5B5222CB23E00D26BBB /* Resources */,
+				94B99EE1043636832FC5CC94 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = H5Support;
+			productName = H5Support;
+			productReference = 180BC5B7222CB23E00D26BBB /* H5Support.app */;
+			productType = "com.apple.product-type.application";
+		};
+		180BC5CE222CB23F00D26BBB /* H5SupportTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 180BC5E6222CB23F00D26BBB /* Build configuration list for PBXNativeTarget "H5SupportTests" */;
+			buildPhases = (
+				180BC5CB222CB23F00D26BBB /* Sources */,
+				180BC5CC222CB23F00D26BBB /* Frameworks */,
+				180BC5CD222CB23F00D26BBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				180BC5D1222CB23F00D26BBB /* PBXTargetDependency */,
+			);
+			name = H5SupportTests;
+			productName = H5SupportTests;
+			productReference = 180BC5CF222CB23F00D26BBB /* H5SupportTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		180BC5D9222CB23F00D26BBB /* H5SupportUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 180BC5E9222CB23F00D26BBB /* Build configuration list for PBXNativeTarget "H5SupportUITests" */;
+			buildPhases = (
+				180BC5D6222CB23F00D26BBB /* Sources */,
+				180BC5D7222CB23F00D26BBB /* Frameworks */,
+				180BC5D8222CB23F00D26BBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				180BC5DC222CB23F00D26BBB /* PBXTargetDependency */,
+			);
+			name = H5SupportUITests;
+			productName = H5SupportUITests;
+			productReference = 180BC5DA222CB23F00D26BBB /* H5SupportUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		180BC5AF222CB23D00D26BBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = apple;
+				TargetAttributes = {
+					180BC5B6222CB23E00D26BBB = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					180BC5CE222CB23F00D26BBB = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 180BC5B6222CB23E00D26BBB;
+					};
+					180BC5D9222CB23F00D26BBB = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 180BC5B6222CB23E00D26BBB;
+					};
+				};
+			};
+			buildConfigurationList = 180BC5B2222CB23D00D26BBB /* Build configuration list for PBXProject "山海奇境_H5Support" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 180BC5AE222CB23D00D26BBB;
+			productRefGroup = 180BC5B8222CB23E00D26BBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				180BC5B6222CB23E00D26BBB /* H5Support */,
+				180BC5CE222CB23F00D26BBB /* H5SupportTests */,
+				180BC5D9222CB23F00D26BBB /* H5SupportUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		180BC5B5222CB23E00D26BBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180BC628222D1C9400D26BBB /* 8.mp3 in Resources */,
+				180BC623222D1C9400D26BBB /* 15.mp3 in Resources */,
+				180BC61E222D1C9400D26BBB /* 18.mp3 in Resources */,
+				180BC61C222D1C9400D26BBB /* 3.mp3 in Resources */,
+				180BC61A222D1C9400D26BBB /* 1.mp3 in Resources */,
+				180BC619222D1C9400D26BBB /* 5.mp3 in Resources */,
+				180BC625222D1C9400D26BBB /* 10.mp3 in Resources */,
+				180BC626222D1C9400D26BBB /* 12.mp3 in Resources */,
+				180BC5C7222CB23F00D26BBB /* LaunchScreen.storyboard in Resources */,
+				180BC5C4222CB23F00D26BBB /* Assets.xcassets in Resources */,
+				180BC61F222D1C9400D26BBB /* 19.mp3 in Resources */,
+				180BC616222D1C9400D26BBB /* 7.mp3 in Resources */,
+				180BC629222D1C9400D26BBB /* 9.mp3 in Resources */,
+				180BC61D222D1C9400D26BBB /* 20.mp3 in Resources */,
+				180BC622222D1C9400D26BBB /* 14.mp3 in Resources */,
+				180BC617222D1C9400D26BBB /* 6.mp3 in Resources */,
+				180BC624222D1C9400D26BBB /* 11.mp3 in Resources */,
+				180BC620222D1C9400D26BBB /* 17.mp3 in Resources */,
+				180BC621222D1C9400D26BBB /* 16.mp3 in Resources */,
+				180BC618222D1C9400D26BBB /* 4.mp3 in Resources */,
+				180BC61B222D1C9400D26BBB /* 2.mp3 in Resources */,
+				180BC5F8222CD57700D26BBB /* QRCodeViewController.xib in Resources */,
+				180BC627222D1C9400D26BBB /* 13.mp3 in Resources */,
+				180BC5C2222CB23E00D26BBB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180BC5CD222CB23F00D26BBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180BC5D8222CB23F00D26BBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		94B99EE1043636832FC5CC94 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-H5Support/Pods-H5Support-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/WebViewJavascriptBridge/WebViewJavascriptBridge.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WebViewJavascriptBridge.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-H5Support/Pods-H5Support-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C910DAF94DF0501FF8CC1A62 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-H5Support-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		180BC5B3222CB23E00D26BBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180BC600222D13D100D26BBB /* CoverView.m in Sources */,
+				180BC5BF222CB23E00D26BBB /* ViewController.m in Sources */,
+				180BC5EE222CBD1D00D26BBB /* DeviceManager.m in Sources */,
+				180BC5F7222CD57700D26BBB /* QRCodeViewController.m in Sources */,
+				180BC5FC222D0D8F00D26BBB /* UIView+Extension.m in Sources */,
+				180BC5F2222CCDA400D26BBB /* MBProgressHUD.m in Sources */,
+				180BC5CA222CB23F00D26BBB /* main.m in Sources */,
+				180BC5BC222CB23E00D26BBB /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180BC5CB222CB23F00D26BBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180BC5D4222CB23F00D26BBB /* H5SupportTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		180BC5D6222CB23F00D26BBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				180BC5DF222CB23F00D26BBB /* H5SupportUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		180BC5D1222CB23F00D26BBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 180BC5B6222CB23E00D26BBB /* H5Support */;
+			targetProxy = 180BC5D0222CB23F00D26BBB /* PBXContainerItemProxy */;
+		};
+		180BC5DC222CB23F00D26BBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 180BC5B6222CB23E00D26BBB /* H5Support */;
+			targetProxy = 180BC5DB222CB23F00D26BBB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		180BC5C0222CB23E00D26BBB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				180BC5C1222CB23E00D26BBB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		180BC5C5222CB23F00D26BBB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				180BC5C6222CB23F00D26BBB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		180BC5E1222CB23F00D26BBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		180BC5E2222CB23F00D26BBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		180BC5E4222CB23F00D26BBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08F122FD292A5F19F4F7E0CA /* Pods-H5Support.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 769VT32NP2;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/H5Support/Common/PrefixHeader.pch";
+				INFOPLIST_FILE = H5Support/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zksw.H5Support;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		180BC5E5222CB23F00D26BBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAA7A41A1126582A05FB52FA /* Pods-H5Support.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 769VT32NP2;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/H5Support/Common/PrefixHeader.pch";
+				INFOPLIST_FILE = H5Support/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zksw.H5Support;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		180BC5E7222CB23F00D26BBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = H5SupportTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zksw.H5SupportTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/H5Support.app/H5Support";
+			};
+			name = Debug;
+		};
+		180BC5E8222CB23F00D26BBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = H5SupportTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zksw.H5SupportTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/H5Support.app/H5Support";
+			};
+			name = Release;
+		};
+		180BC5EA222CB23F00D26BBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = H5SupportUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zksw.H5SupportUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = H5Support;
+			};
+			name = Debug;
+		};
+		180BC5EB222CB23F00D26BBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = H5SupportUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.zksw.H5SupportUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = H5Support;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		180BC5B2222CB23D00D26BBB /* Build configuration list for PBXProject "山海奇境_H5Support" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180BC5E1222CB23F00D26BBB /* Debug */,
+				180BC5E2222CB23F00D26BBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		180BC5E3222CB23F00D26BBB /* Build configuration list for PBXNativeTarget "H5Support" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180BC5E4222CB23F00D26BBB /* Debug */,
+				180BC5E5222CB23F00D26BBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		180BC5E6222CB23F00D26BBB /* Build configuration list for PBXNativeTarget "H5SupportTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180BC5E7222CB23F00D26BBB /* Debug */,
+				180BC5E8222CB23F00D26BBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		180BC5E9222CB23F00D26BBB /* Build configuration list for PBXNativeTarget "H5SupportUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				180BC5EA222CB23F00D26BBB /* Debug */,
+				180BC5EB222CB23F00D26BBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 180BC5AF222CB23D00D26BBB /* Project object */;
+}
