@@ -21,6 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// 开始获取手机的朝向,东西南北
 - (void)startUpdateHeading;
 
+- (NSString *)getWifiName;
+
 
 /// 播放声音
 - (void)playVoice:(NSDictionary *)data;

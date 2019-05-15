@@ -118,6 +118,7 @@
 		18BD2348228BB162006E0000 /* AIBUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIBUtils.h; sourceTree = "<group>"; };
 		18BD2349228BB162006E0000 /* AIBBeaconRegionAny.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIBBeaconRegionAny.h; sourceTree = "<group>"; };
 		18BD234A228BB162006E0000 /* AIBUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIBUtils.m; sourceTree = "<group>"; };
+		18BD234D228BB7F5006E0000 /* H5Support.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = H5Support.entitlements; sourceTree = "<group>"; };
 		BAA7A41A1126582A05FB52FA /* Pods-H5Support.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H5Support.release.xcconfig"; path = "Pods/Target Support Files/Pods-H5Support/Pods-H5Support.release.xcconfig"; sourceTree = "<group>"; };
 		E6A53B0C11A16F494FBDD7EF /* Pods_H5Support.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_H5Support.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -173,6 +174,7 @@
 		180BC5B9222CB23E00D26BBB /* H5Support */ = {
 			isa = PBXGroup;
 			children = (
+				18BD234D228BB7F5006E0000 /* H5Support.entitlements */,
 				180BC5BA222CB23E00D26BBB /* AppDelegate.h */,
 				180BC5BB222CB23E00D26BBB /* AppDelegate.m */,
 				180BC5BD222CB23E00D26BBB /* ViewController.h */,
@@ -360,6 +362,9 @@
 					180BC5B6222CB23E00D26BBB = {
 						CreatedOnToolsVersion = 10.1;
 						SystemCapabilities = {
+							com.apple.AccessWiFi = {
+								enabled = 1;
+							};
 							com.apple.BackgroundModes = {
 								enabled = 1;
 							};
@@ -676,6 +681,7 @@
 			baseConfigurationReference = 08F122FD292A5F19F4F7E0CA /* Pods-H5Support.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = H5Support/H5Support.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 769VT32NP2;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/H5Support/Common/PrefixHeader.pch";
@@ -696,6 +702,7 @@
 			baseConfigurationReference = BAA7A41A1126582A05FB52FA /* Pods-H5Support.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = H5Support/H5Support.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 769VT32NP2;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/H5Support/Common/PrefixHeader.pch";

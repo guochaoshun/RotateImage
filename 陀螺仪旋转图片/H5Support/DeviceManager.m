@@ -11,6 +11,8 @@
 #import <CoreLocation/CoreLocation.h>
 #import <CoreMotion/CoreMotion.h>
 #import "AIBBeaconRegionAny.h"
+#import <SystemConfiguration/CaptiveNetwork.h>
+
 
 @interface DeviceManager ()<AVAudioRecorderDelegate,CLLocationManagerDelegate>
 
@@ -206,8 +208,24 @@
 {
     return YES;
 }
-
-
+#pragma mark - 获取wifi名字
+- (NSString *)getWifiName {
+    
+    // 一定要在capableilities中打开access WiFi infomation
+    NSString *wifiName = nil;
+    CFArrayRef myArray = CNCopySupportedInterfaces();
+    if (myArray != nil) {
+        CFDictionaryRef myDict = CNCopyCurrentNetworkInfo((CFStringRef)CFArrayGetValueAtIndex(myArray, 0));
+        if (myDict != nil) {
+            NSDictionary *dict = (NSDictionary*)CFBridgingRelease(myDict);
+            wifiName = [dict valueForKey:@"SSID"];
+            
+        }
+        
+    }
+    NSLog(@"wifiName:%@", wifiName);
+    return wifiName;
+}
 
 #pragma mark - 声音相关
 /// 开启检测麦克风

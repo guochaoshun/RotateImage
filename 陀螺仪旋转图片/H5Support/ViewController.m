@@ -172,7 +172,7 @@
         _deviceManager = [[DeviceManager alloc]init];
         [_deviceManager startBeacon];
         [_deviceManager startUpdateHeading];
-
+        [_deviceManager getWifiName];
         WeakSelf
         [_deviceManager setCallBack:^(NSDictionary * data) {
             
