@@ -219,7 +219,7 @@
         if (myDict != nil) {
             NSDictionary *dict = (NSDictionary*)CFBridgingRelease(myDict);
             wifiName = [dict valueForKey:@"SSID"];
-            
+            NSLog(@"mac地址 : %@",[dict valueForKey:@"BSSID"]);
         }
         
     }
