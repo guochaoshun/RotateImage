@@ -122,7 +122,8 @@
 }
 
 - (void)endBeacon {
-    
+    [self.locationManager stopMonitoringForRegion:self.beaconRegion];
+    [self.locationManager stopRangingBeaconsInRegion:self.beaconRegion];
 }
 
 - (void)startListenBeacon {
