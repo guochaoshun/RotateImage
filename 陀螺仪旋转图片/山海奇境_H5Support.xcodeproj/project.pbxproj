@@ -41,6 +41,8 @@
 		180BC627222D1C9400D26BBB /* 13.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 180BC613222D1C9400D26BBB /* 13.mp3 */; };
 		180BC628222D1C9400D26BBB /* 8.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 180BC614222D1C9400D26BBB /* 8.mp3 */; };
 		180BC629222D1C9400D26BBB /* 9.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 180BC615222D1C9400D26BBB /* 9.mp3 */; };
+		18BD234B228BB162006E0000 /* AIBBeaconRegionAny.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD2347228BB162006E0000 /* AIBBeaconRegionAny.m */; };
+		18BD234C228BB162006E0000 /* AIBUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD234A228BB162006E0000 /* AIBUtils.m */; };
 		D39B2D4B3E5A21DFAB75802C /* Pods_H5Support.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6A53B0C11A16F494FBDD7EF /* Pods_H5Support.framework */; };
 /* End PBXBuildFile section */
 
@@ -112,6 +114,10 @@
 		180BC613222D1C9400D26BBB /* 13.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 13.mp3; sourceTree = "<group>"; };
 		180BC614222D1C9400D26BBB /* 8.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 8.mp3; sourceTree = "<group>"; };
 		180BC615222D1C9400D26BBB /* 9.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 9.mp3; sourceTree = "<group>"; };
+		18BD2347228BB162006E0000 /* AIBBeaconRegionAny.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIBBeaconRegionAny.m; sourceTree = "<group>"; };
+		18BD2348228BB162006E0000 /* AIBUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIBUtils.h; sourceTree = "<group>"; };
+		18BD2349228BB162006E0000 /* AIBBeaconRegionAny.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIBBeaconRegionAny.h; sourceTree = "<group>"; };
+		18BD234A228BB162006E0000 /* AIBUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIBUtils.m; sourceTree = "<group>"; };
 		BAA7A41A1126582A05FB52FA /* Pods-H5Support.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-H5Support.release.xcconfig"; path = "Pods/Target Support Files/Pods-H5Support/Pods-H5Support.release.xcconfig"; sourceTree = "<group>"; };
 		E6A53B0C11A16F494FBDD7EF /* Pods_H5Support.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_H5Support.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -176,6 +182,7 @@
 				180BC5F4222CD57700D26BBB /* QRCodeViewController.h */,
 				180BC5F5222CD57700D26BBB /* QRCodeViewController.m */,
 				180BC5F6222CD57700D26BBB /* QRCodeViewController.xib */,
+				18BD2346228BB162006E0000 /* AIBBeaconRegionAny */,
 				180BC5FD222D13A500D26BBB /* View */,
 				180BC5EF222CCD8D00D26BBB /* Common */,
 				180BC5C0222CB23E00D26BBB /* Main.storyboard */,
@@ -253,6 +260,17 @@
 				180BC609222D1C9400D26BBB /* 20.mp3 */,
 			);
 			path = voice;
+			sourceTree = "<group>";
+		};
+		18BD2346228BB162006E0000 /* AIBBeaconRegionAny */ = {
+			isa = PBXGroup;
+			children = (
+				18BD2347228BB162006E0000 /* AIBBeaconRegionAny.m */,
+				18BD2348228BB162006E0000 /* AIBUtils.h */,
+				18BD2349228BB162006E0000 /* AIBBeaconRegionAny.h */,
+				18BD234A228BB162006E0000 /* AIBUtils.m */,
+			);
+			path = AIBBeaconRegionAny;
 			sourceTree = "<group>";
 		};
 		B450B0D17F7D2677701FAD12 /* Pods */ = {
@@ -479,11 +497,13 @@
 			files = (
 				180BC600222D13D100D26BBB /* CoverView.m in Sources */,
 				180BC5BF222CB23E00D26BBB /* ViewController.m in Sources */,
+				18BD234B228BB162006E0000 /* AIBBeaconRegionAny.m in Sources */,
 				180BC5EE222CBD1D00D26BBB /* DeviceManager.m in Sources */,
 				180BC5F7222CD57700D26BBB /* QRCodeViewController.m in Sources */,
 				180BC5FC222D0D8F00D26BBB /* UIView+Extension.m in Sources */,
 				180BC5F2222CCDA400D26BBB /* MBProgressHUD.m in Sources */,
 				180BC5CA222CB23F00D26BBB /* main.m in Sources */,
+				18BD234C228BB162006E0000 /* AIBUtils.m in Sources */,
 				180BC5BC222CB23E00D26BBB /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

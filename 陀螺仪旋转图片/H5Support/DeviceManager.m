@@ -10,6 +10,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import <CoreLocation/CoreLocation.h>
 #import <CoreMotion/CoreMotion.h>
+#import "AIBBeaconRegionAny.h"
 
 @interface DeviceManager ()<AVAudioRecorderDelegate,CLLocationManagerDelegate>
 
@@ -85,6 +86,7 @@
 
 #pragma mark - 蓝牙相关
 
+
 - (void)startBeacon{
     
     BOOL availableMonitor = [CLLocationManager isMonitoringAvailableForClass:[CLBeaconRegion class]];
@@ -92,14 +94,14 @@
         CLAuthorizationStatus authorizationStatus = [CLLocationManager authorizationStatus];
         switch (authorizationStatus) {
             case kCLAuthorizationStatusNotDetermined:{
-
-                [self.locationManager requestAlwaysAuthorization];
+                
+                [self.locationManager requestWhenInUseAuthorization];
                 // 第一次请求完了之后,用户点击完成后,在调用才知道结果
                 dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
                     [self startBeacon];
                 });
             }
-
+                
                 break;
             case kCLAuthorizationStatusRestricted:
             case kCLAuthorizationStatusDenied:
@@ -107,14 +109,34 @@
                 break;
             case kCLAuthorizationStatusAuthorizedAlways:
             case kCLAuthorizationStatusAuthorizedWhenInUse:{
-                [self.locationManager startRangingBeaconsInRegion:self.beaconRegion];
-                [self.locationManager startMonitoringForRegion:self.beaconRegion];
+                [self startListenBeacon];
             }
                 break;
         }
     } else {
         NSLog(@"该设备不支持 CLBeaconRegion 区域检测");
     }
+    
+}
+
+- (void)endBeacon {
+    
+}
+
+- (void)startListenBeacon {
+    
+    
+    // 1.使用UUID注册了一个CLBeaconRegion,但是就只能监听这个UUID下的beacon
+    //            NSUUID * uuid = [[NSUUID alloc]initWithUUIDString:@"E2C56DB5-DFFB-48D2-B060-D0F5A71096E0"];
+    //        CLBeaconRegion * beaconRegion = [[CLBeaconRegion alloc] initWithProximityUUID:uuid identifier:@"test"];
+    
+    // 2.监听所有的beacon
+    AIBBeaconRegionAny *beaconRegion = [[AIBBeaconRegionAny alloc] initWithIdentifier:@"Any"];
+    beaconRegion.notifyEntryStateOnDisplay = YES;
+    _beaconRegion = beaconRegion;
+    [self.locationManager startRangingBeaconsInRegion:beaconRegion];
+    [self.locationManager startMonitoringForRegion:beaconRegion];
+    
     
 }
 
@@ -155,48 +177,35 @@
     }
     return _locationManager;
 }
-/// 这里只是注册了一个UUID,但是听说要有不同的UUID,如果需要就用下面setupData的UUID数组
-- (CLBeaconRegion *)beaconRegion {
-    if (!_beaconRegion) {
-        NSUUID * uuid = [[NSUUID alloc]initWithUUIDString:Beacon_Device_UUID];
-        _beaconRegion = [[CLBeaconRegion alloc] initWithProximityUUID:uuid identifier:@"test"];
-        _beaconRegion.notifyEntryStateOnDisplay = YES;
-        
+#pragma mark - 手机朝向(东西南北)
+- (void)startUpdateHeading {
+    //判断定位设备是否能用和能否获得导航数据
+    if ([CLLocationManager locationServicesEnabled]&&[CLLocationManager headingAvailable]){
+        [self.locationManager startUpdatingHeading];//开始获得航向数据
     }
-    return _beaconRegion;
+    else{
+        NSLog(@"不能获得航向数据");
+    }
+    
 }
-/// 下面是在https://github.com/AprilBrother/AprilBeacon-iOS-SDK搜集到的UUID,这个应该是全部的UUID了
-- (NSArray *)setupData {
-    NSArray *data = @[
-                      @{
-                          @"name" : @"AprilBeacon",
-                          @"uuid" : @"E2C56DB5-DFFB-48D2-B060-D0F5A71096E0",
-                          },
-                      @{
-                          @"name" : @"Apple AirLocate",
-                          @"uuid" : @"5A4BCFCE-174E-4BAC-A814-092E77F6B7E5",
-                          },
-                      @{
-                          @"name" : @"Apple AirLocate2",
-                          @"uuid" : @"74278BDA-B644-4520-8F0C-720EAF059935",
-                          },
-                      @{
-                          @"name" : @"ESTimote",
-                          @"uuid" : @"B9407F30-F5F8-466E-AFF9-25556B57FE6D",
-                          },
-                      
-                      @{
-                          @"name" : @"WeixinForBeacon",
-                          @"uuid" : @"FDA50693-A4E2-4FB1-AFCF-C6EB07647825",
-                          },
-                      @{
-                          @"name" : @"EEK Beacon",
-                          @"uuid" : @"B5B182C7-EAB1-4988-AA99-B5C1517008D9",
-                          }
-                      ];
-    return data;
+//获得地理和地磁航向数据，从而转动地理刻度表
+-(void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading{
+    
+    
+    if (newHeading.headingAccuracy < 0) return;
+    
+    // 0-360之间,0就是正北方向
+    CLLocationDirection  theHeading = ((newHeading.trueHeading > 0) ?
+                                       newHeading.trueHeading : newHeading.magneticHeading);
+    
+    NSLog(@"手机朝向 %lf",theHeading);
+    
 }
-
+//判断设备是否需要校验，受到外来磁场干扰时
+-(BOOL)locationManagerShouldDisplayHeadingCalibration:(CLLocationManager *)manager
+{
+    return YES;
+}
 
 
 

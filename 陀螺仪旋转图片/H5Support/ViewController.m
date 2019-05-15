@@ -159,10 +159,6 @@
             NSLog(@"%@",data);
             [weakSelf.webView reload];
         }];
-        // 陀螺仪内容
-        //        [config.userContentController addScriptMessageHandler:self name:@""];
-        // 手机朝向
-        //        [config.userContentController addScriptMessageHandler:self name:@""];
         
         
     }
@@ -174,11 +170,13 @@
 - (DeviceManager *)deviceManager {
     if (_deviceManager == nil) {
         _deviceManager = [[DeviceManager alloc]init];
+        [_deviceManager startBeacon];
+        [_deviceManager startUpdateHeading];
+
         WeakSelf
         [_deviceManager setCallBack:^(NSDictionary * data) {
             
             if ([data isKindOfClass:[NSNumber class]]) {
-                NSLog(@"%@",data);
                 [weakSelf didChangeY:(NSNumber *)data];
                 return ;
             }

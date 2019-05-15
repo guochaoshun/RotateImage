@@ -18,6 +18,10 @@ NS_ASSUME_NONNULL_BEGIN
 /// 开始蓝牙监听
 - (void)startBeacon;
 
+/// 开始获取手机的朝向,东西南北
+- (void)startUpdateHeading;
+
+
 /// 播放声音
 - (void)playVoice:(NSDictionary *)data;
 /// 开始录音
